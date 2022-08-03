@@ -1,17 +1,3 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-}
-
-
-
 import groovy.json.JsonSlurper
 
 def getFtpPublishProfile(def publishProfilesJson) {
